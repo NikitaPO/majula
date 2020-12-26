@@ -1,0 +1,11 @@
+@import "../../node_modules/normalize.css/normalize";
+@import "../fonts/icons/style.css";
+@import "fonts";
+@import "vars";
+@import "libs";
+
+body {
+  display: flex;
+}
+
+@import "media";
