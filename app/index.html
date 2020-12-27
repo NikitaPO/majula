@@ -3,11 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Majula - home page</title>
+    <title>Majula - home</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <i class="icon-plane" style="color: black"></i>
+    <header
+      class="header"
+      style="background: url(../img/header_bg.jpg) center/cover no-repeat"
+    >
+      <div class="container">
+        <div class="header-items">
+          <img src="./img/logo.png" alt="" class="header_logo" />
+
+          <div class="header_elements-wrapper">
+            <nav class="header_nav">
+              <a href="#" class="header_nav-item">Главная</a>
+              <a href="#" class="header_nav-item">О нас</a>
+              <a href="#" class="header_nav-item">Контакты</a>
+              <a href="#" class="header_nav-item">Помощь</a>
+            </nav>
+            <a href="tel:88123478920" class="header_phone-number"
+              ><i class="icon-phone"></i>+7 812 3478920</a
+            >
+            <div class="header_elements">
+              <a href="#" class="header_busket">
+                <i class="icon-cart"></i>
+                <button class="header_btn login">Вход</button>
+                <button class="header_btn register">Регистрация</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
   <script src="js/index.min.js" defer></script>
 </html>
