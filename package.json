@@ -2,11 +2,12 @@
   "name": "gulp_sample",
   "version": "1.0.0",
   "description": "",
-  "main": "app/index.html",
+  "main": "app/index.html",  
   "scripts": {
     "watch": "gulp",
     "build": "gulp build",
-    "public": "gulp gitPublic",
+    "public": "gulp public",
+    "public:full": "gulp publicWithImages",
     "build:full": "gulp buildWithImages"
   },
   "author": "Nikita P",
