@@ -12,30 +12,52 @@
       style="background: url(../img/header_bg.jpg) center/cover no-repeat"
     >
       <div class="container">
-        <div class="header-items">
-          <img src="./img/logo.png" alt="" class="header_logo" />
+        <div class="header_top-wrapper">
+          <div class="header-items">
+            <img src="./img/logo.png" alt="" class="header_logo" />
 
-          <div class="header_elements-wrapper">
-            <nav class="header_nav">
-              <a href="#" class="header_nav-item">Главная</a>
-              <a href="#" class="header_nav-item">О нас</a>
-              <a href="#" class="header_nav-item">Контакты</a>
-              <a href="#" class="header_nav-item">Помощь</a>
-            </nav>
-            <a href="tel:88123478920" class="header_phone-number"
-              ><i class="icon-phone"></i>+7 812 3478920</a
-            >
-            <div class="header_elements">
-              <a href="#" class="header_busket">
-                <i class="icon-cart"></i>
+            <div class="header_elements-wrapper">
+              <nav class="header_nav">
+                <a href="#" class="header_nav-item">Главная</a>
+                <a href="#" class="header_nav-item">О нас</a>
+                <a href="#" class="header_nav-item">Контакты</a>
+                <a href="#" class="header_nav-item">Помощь</a>
+              </nav>
+              <a href="tel:88123478920" class="header_phone-number"
+                ><i class="icon-phone"></i>+7 812 3478920</a
+              >
+              <div class="header_elements">
+                <a href="#" class="header_busket default_header-element bage">
+                  <i class="icon-cart"></i
+                ></a>
                 <button class="header_btn login">Вход</button>
                 <button class="header_btn register">Регистрация</button>
-              </a>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <div class="search">
+          <h1 class="search_title">Добро пожаловать в магазин Маджула!</h1>
+          <p class="search_text">
+            Премиум WordPress темы, web шаблоны и многое другое...
+          </p>
+          <div class="search_input-wrapper">
+            <input
+              type="text"
+              placeholder="Поиск по ключевым словам..."
+              class="search_input"
+              id="search_input"
+            />
+
+            <a href="#" class="search_btn">
+              <i class="icon-search"></i>
+            </a>
           </div>
         </div>
       </div>
     </header>
+
+    <script src="js/index.min.js" defer></script>
   </body>
-  <script src="js/index.min.js" defer></script>
 </html>
