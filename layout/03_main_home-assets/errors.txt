@@ -1,2 +1,2 @@
-[2020-12-29 15:54:51] layer " +7 812 3478920": Expected Either a default asset specification or a layer asset specification but " " found.
-[2020-12-29 15:54:51] layer "+61 3 8376 6284": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2020-12-29 17:03:32] layer " +7 812 3478920": Expected Either a default asset specification or a layer asset specification but " " found.
+[2020-12-29 17:01:05] layer "+61 3 8376 6284": Expected Either a default asset specification or a layer asset specification but "+" found.

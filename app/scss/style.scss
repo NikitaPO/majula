@@ -197,7 +197,7 @@ section {
   padding-top: 101px;
   padding-bottom: 66px;
   text-align: center;
-  font: 36px/40px $rb;
+  font: 36px/50px $rb;
   color: $text;
 }
 
@@ -468,5 +468,111 @@ section {
 //=====================
 //      Team
 //=====================
+
+.people {
+  padding-top: 248px;
+  padding-bottom: 260px;
+  background-image: url(../img/people.webp);
+  background-repeat: repeat-y;
+  background-size: cover;
+  animation: bgMove 45s linear infinite normal backwards;
+}
+
+@keyframes bgMove {
+  from {
+    background-position-y: 0px;
+  }
+  to {
+    background-position-y: 704px;
+  }
+}
+
+.people_block {
+  background-color: $blue-dark;
+  color: #fff;
+  padding: 70px;
+  margin: 0 auto;
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.people_count {
+  font-weight: bold;
+}
+
+.people_block-text {
+  font: 25px/36px $rr;
+  max-width: 275px;
+  width: 100%;
+}
+
+.people_block-btn {
+  padding: 25px 40px 20px 40px;
+  align-self: start;
+  background-color: #fff;
+  color: #000;
+  line-height: 20px;
+  font: 18px $rr;
+  transition: 0.3s;
+}
+
+.people_block-btn:hover {
+  background-color: $blue;
+  color: #fff;
+}
+
+//=====================
+//      Tutorials
+//=====================
+
+.tutorials_items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tutorials_item-img {
+  object-fit: cover;
+  width: 370px;
+}
+
+.tutorials_item-title {
+  color: $text;
+  background: #f8f8f8;
+  text-align: center;
+  padding: 40px 70px;
+  font: 24px $rb;
+}
+
+//=====================
+//      Footer
+//=====================
+
+.footer {
+  color: $gray-text;
+  background-color: $blue-dark;
+}
+
+.footer_columns {
+  padding-top: 115px;
+  padding-bottom: 92px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_column {
+  width: 25%;
+  & + .footer_column {
+    margin-left: 80px;
+  }
+}
+
+.footer_copy {
+  padding-top: 27px;
+  padding-bottom: 35px;
+  border-top: 1px solid #424d53;
+  text-align: center;
+}
 
 @import "media";
