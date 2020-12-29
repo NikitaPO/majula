@@ -20,12 +20,13 @@
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
+    "gulp-strip-comments": "^2.5.2",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
     "mixitup": "^3.3.1"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1",
-    "swiper": "^6.4.5"
+    "glider-js": "^1.7.3",
+    "normalize.css": "^8.0.1"
   }
 }

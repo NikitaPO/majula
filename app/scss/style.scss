@@ -1,6 +1,6 @@
 @import "../../node_modules/normalize.css/normalize";
 @import "../fonts/icons/style.css";
-@import "../../node_modules/swiper/swiper-bundle.css";
+@import "../../node_modules/glider-js/glider";
 @import "fonts";
 @import "vars";
 @import "libs";
@@ -243,6 +243,7 @@ section {
 
 .product_item {
   display: inline-block;
+  position: relative;
   max-width: 440px;
   width: 100%;
   background-color: #fff;
@@ -253,6 +254,16 @@ section {
 
 .product_item:hover {
   box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+}
+
+.product_item.new::before {
+  content: "";
+  background-image: url(../img/product_item_bage.webp);
+  position: absolute;
+  width: 63px;
+  height: 64px;
+  top: 0;
+  left: 0;
 }
 
 .product_item-img {
@@ -359,5 +370,103 @@ section {
 .popular {
   background-color: #fff;
 }
+
+.popular_slider {
+  max-width: 1888px;
+  width: 100%;
+}
+
+.popular .product_item {
+  max-width: 100%;
+  margin: 0px;
+
+  &:hover {
+    box-shadow: 0px 5px 5px 0px rgba(216, 216, 216, 0.75);
+  }
+}
+
+.product_item-wrapper {
+  margin: 15px;
+}
+
+.popular_slider-content {
+  margin-bottom: 45px;
+}
+
+.glider-dot {
+  background-color: #e8e8e8;
+  box-shadow: inset 0px 1px 1px rgba(151, 160, 165, 0.75);
+}
+
+.glider-dot.active {
+  background-color: $blue;
+  box-shadow: none;
+}
+
+//=====================
+//      Benefits
+//=====================
+
+.benefits {
+  padding-bottom: 119px;
+  background-color: $blue-dark;
+}
+
+.benefits_title {
+  color: #fff;
+}
+
+.benefits_items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.benefits_item {
+  text-align: center;
+  color: #fff;
+}
+
+.benefits_item + .benefits_item {
+  margin-left: 90px;
+}
+.benefits_item:hover {
+  color: #fff;
+  & .benefits_item-title {
+    color: $blue;
+    transition: 0.5s;
+  }
+
+  & .benefits_item-img {
+    background-color: $blue;
+    color: #fff;
+    transition: 0.5s;
+  }
+}
+
+.benefits_item-img {
+  margin: 0 auto;
+  height: 114px;
+  width: 114px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+  font-size: 70px;
+  line-height: 130px;
+}
+
+.benefits_item-title {
+  margin-top: 36px;
+  margin-bottom: 25px;
+  font: 24px $rm;
+}
+
+.benefits_item-text {
+  font: 15px/24px $rr;
+  color: $gray-text;
+}
+
+//=====================
+//      Team
+//=====================
 
 @import "media";

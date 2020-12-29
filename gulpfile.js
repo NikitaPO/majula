@@ -4,6 +4,7 @@ const concat = require("gulp-concat");
 const browserSync = require("browser-sync").create();
 const uglify = require("gulp-uglify-es").default;
 const autoprefixer = require("gulp-autoprefixer");
+const strip = require("gulp-strip-comments");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
@@ -45,8 +46,9 @@ function images() {
 }
 
 function scripts() {
-  return src(["app/js/index.js"])
+  return src(["node_modules/glider-js/glider.js", "app/js/index.js"])
     .pipe(concat("index.min.js"))
+    .pipe(strip())
     .pipe(uglify())
     .pipe(dest("app/js/"))
     .pipe(browserSync.stream());
