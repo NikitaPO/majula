@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'majula_icons';
-  src:  url('fonts/majula_icons.eot?mfvfmx');
-  src:  url('fonts/majula_icons.eot?mfvfmx#iefix') format('embedded-opentype'),
-    url('fonts/majula_icons.ttf?mfvfmx') format('truetype'),
-    url('fonts/majula_icons.woff?mfvfmx') format('woff'),
-    url('fonts/majula_icons.svg?mfvfmx#majula_icons') format('svg');
+  font-family: "majula_icons";
+  src: url("fonts/majula_icons.eot?mfvfmx");
+  src: url("fonts/majula_icons.eot?mfvfmx#iefix") format("embedded-opentype"),
+    url("fonts/majula_icons.ttf?mfvfmx") format("truetype"),
+    url("fonts/majula_icons.woff?mfvfmx") format("woff"),
+    url("fonts/majula_icons.svg?mfvfmx#majula_icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'majula_icons' !important;
-  speak: never;
+  font-family: "majula_icons" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
