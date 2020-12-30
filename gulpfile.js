@@ -9,6 +9,29 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
 
+function scripts() {
+  return src(["node_modules/glider-js/glider.js", "app/js/index.js"])
+    .pipe(concat("index.min.js"))
+    .pipe(strip())
+    .pipe(uglify())
+    .pipe(dest("app/js/"))
+    .pipe(browserSync.stream());
+}
+
+function styles() {
+  return src("app/scss/style.scss")
+    .pipe(concat("style.min.css"))
+    .pipe(scss({ outputStyle: "compressed" }).on("error", scss.logError))
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ["last 10 versions"],
+        grid: true,
+      })
+    )
+    .pipe(dest("app/css/"))
+    .pipe(browserSync.stream());
+}
+
 function browsersync() {
   browserSync.init({
     server: {
@@ -43,29 +66,6 @@ function images() {
     )
     .pipe(webp())
     .pipe(dest("dist/img/"));
-}
-
-function scripts() {
-  return src(["node_modules/glider-js/glider.js", "app/js/index.js"])
-    .pipe(concat("index.min.js"))
-    .pipe(strip())
-    .pipe(uglify())
-    .pipe(dest("app/js/"))
-    .pipe(browserSync.stream());
-}
-
-function styles() {
-  return src("app/scss/style.scss")
-    .pipe(concat("style.min.css"))
-    .pipe(scss({ outputStyle: "compressed" }).on("error", scss.logError))
-    .pipe(
-      autoprefixer({
-        overrideBrowserslist: ["last 10 versions"],
-        grid: true,
-      })
-    )
-    .pipe(dest("app/css/"))
-    .pipe(browserSync.stream());
 }
 
 function build() {
